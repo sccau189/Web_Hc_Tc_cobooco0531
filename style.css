@@ -97,12 +97,12 @@ nav #box #social a:ntc-child(2) {
   grid-gap: 20px;
 }
 
-#news div {
+#news > div {
   background-color: white;
   padding: 40px 30px;
 }
 
-#news div h3 {
+#news > div h3 {
   color: #49aa45;
   font-size: 15px;
   font-weight: 300;
@@ -111,14 +111,14 @@ nav #box #social a:ntc-child(2) {
   margin: 25px;
 }
 
-#news div h4 {
+#news > div h4 {
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 5.5px;
   text-align: center;
 }
 
-#news div p {
+#news > div p {
   color: #333333;
   font-size: 16px;
   font-weight: 300;
@@ -126,6 +126,42 @@ nav #box #social a:ntc-child(2) {
   letter-spacing: 4.8px;
   margin-top: 22px;
   margin-bottom: 30px;
+}
+
+#news > div hr {
+  border: 0.5px solid #000000;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#news > div div {
+  position: relative;
+  font-size: 0;
+}
+
+#news > div div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#news > div img {
+  width: 100%;
+}
+
+#news > div:hover hr {
+  width: 100%;
+}
+
+#news > div:hover div::before {
+  opacity: 0.5;
 }
 
 #product {
