@@ -4,11 +4,19 @@
     font-family: 微軟正黑體;
     box-sizing: border-box;
 }
-
+// 格線會讓子元素改為區塊元素
 #banner{
     background-image: url(./img/banner.png);
     width: 1920px;
     height: 1280px;
+    display: grid;
+    align-items: center;
+// 行內元素
+    img{
+        // 區塊才能使用
+        margin: 0 auto;
+    }
+
 }
 // 導覽列
 nav{
@@ -35,13 +43,29 @@ nav{
 
             a{
                 font-size: 18px;
+                font-weight: 100;
+
+                &:nth-child(2){
+                    text-align: center;
             }
+                &:nth-child(3){
+                    text-align: center;
+            }
+
+            
+        }
+            
             
         }
 
         #social{
             display: grid;
             grid-template-columns: repeat(2 ,1fr);
+
+            a:ntc-child(2){
+                text-align: right;
+            }
+
         }
     }
 }
