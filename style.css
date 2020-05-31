@@ -11,6 +11,15 @@
   background-image: url(./img/banner.png);
   width: 1920px;
   height: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner img {
+  margin: 0 auto;
 }
 
 nav {
@@ -41,6 +50,15 @@ nav #box #link {
 
 nav #box #link a {
   font-size: 18px;
+  font-weight: 100;
+}
+
+nav #box #link a:nth-child(2) {
+  text-align: center;
+}
+
+nav #box #link a:nth-child(3) {
+  text-align: center;
 }
 
 nav #box #social {
@@ -48,5 +66,23 @@ nav #box #social {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+nav #box #social a:ntc-child(2) {
+  text-align: right;
+}
+
+#contect {
+  width: 1920px;
+  height: 500px;
+  background-image: url(./img/paper.png);
+}
+
+#contect h1 {
+  text-align: center;
+  margin-top: 46px;
+  font-weight: 300;
+  letter-spacing: 9.6px;
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */

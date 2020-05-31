@@ -69,3 +69,19 @@ nav{
         }
     }
 }
+
+// 內容區塊
+#contect{
+    width: 1920px;
+    height: 500px;
+    background-image: url(./img/paper.png);
+
+    h1{
+        text-align: center;
+        margin-top: 46px;
+        font-weight: 300;
+        letter-spacing: 9.6px;
+        font-size: 32px;
+
+    }
+}
