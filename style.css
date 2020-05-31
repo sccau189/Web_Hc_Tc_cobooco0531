@@ -74,15 +74,174 @@ nav #box #social a:ntc-child(2) {
 
 #contect {
   width: 1920px;
-  height: 800px;
   background-image: url(./img/paper.png);
+  border: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 #contect h1 {
   text-align: center;
   margin-top: 46px;
+  margin-bottom: 60px;
   font-weight: 300;
   letter-spacing: 9.6px;
   font-size: 32px;
+}
+
+#news {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#news div {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+#news div h3 {
+  color: #49aa45;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  text-align: center;
+  margin: 25px;
+}
+
+#news div h4 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 5.5px;
+  text-align: center;
+}
+
+#news div p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8px;
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+
+#product {
+  text-align: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#product div {
+  width: 250px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  position: absolute;
+  top: 73px;
+  right: 50px;
+  padding: 0;
+}
+
+#product div h2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 11px;
+  text-align: center;
+  color: #f5bb28;
+  margin-bottom: 20px;
+}
+
+#product div h3 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 35px;
+}
+
+#product div p {
+  font-size: 20px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000000;
+}
+
+#text {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px auto;
+      grid-template-columns: 620px auto;
+  grid-gap: 40px;
+  padding-right: 30px;
+}
+
+#text img {
+  border: 10px solid white;
+}
+
+#text div {
+  width: 480px;
+  height: 300px;
+}
+
+#text div h2 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 7.2px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+#text div p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2.5;
+  letter-spacing: 6px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+#text div a {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 18px 50px;
+  letter-spacing: 5.4px;
+  text-align: center;
+  color: #000000;
+  border: solid 2px #252525;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+footer img {
+  margin: 126px 0 73px;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+}
+
+footer p:nth-of-type(1) {
+  margin-bottom: 17px;
+}
+
+footer p:nth-of-type(2) {
+  margin-bottom: 137px;
 }
 /*# sourceMappingURL=style.css.map */
